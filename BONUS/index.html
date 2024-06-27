@@ -13,8 +13,8 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <!-- utilizzando il v-for generiamo dinamicamente i li richiamando dal nostro array emails  -->
+        <!-- utilizziamo un v-if per dare la condizione  se v-if ha tot elementi mostrare  -->
+        <ul v-if="emails.length === 10">
             <li v-for="email in emails" :key="email">{{ email }}</li>
         </ul>
     </div>
