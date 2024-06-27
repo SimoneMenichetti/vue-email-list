@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-email-list</title>
+        <!-- css -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- vues 3.0 -->
+        <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+        <!-- axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <!-- utilizzando il v-for generiamo dinamicamente i li richiamando dal nostro array emails  -->
+            <li v-for="email in emails" :key="email">{{ email }}</li>
+        </ul>
+    </div>
+    <script src="./javascript/mainjavascript.js"></script>
+</body>
+</html>
