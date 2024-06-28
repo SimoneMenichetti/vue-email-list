@@ -15,7 +15,7 @@
     <div id="app">
         <!-- utilizziamo un v-if per dare la condizione  se v-if ha tot elementi mostrare  -->
         <ul v-if="emails.length === 10">
-            <li v-for="email in emails" :key="email">{{ email }}</li>
+            <li v-for="(email, index) in emails" :key="index">{{ email }}</li>
         </ul>
     </div>
     <script src="./javascript/mainjavascript.js"></script>
